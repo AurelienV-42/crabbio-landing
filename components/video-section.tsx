@@ -14,7 +14,7 @@ declare global {
 
 // Video url and disable controls
 const videoUrl =
-  "https://player.vimeo.com/video/347119375?background=1&autopause=0&byline=0&title=0&portrait=0";
+  "https://player.vimeo.com/video/1076686047?background=1&autopause=0&byline=0&title=0&portrait=0";
 const fadeCursorAfter = 750;
 
 function VideoPlayer() {
@@ -95,7 +95,7 @@ function VideoPlayer() {
 
   return (
     <div
-      className="relative w-full pt-[56.25%]"
+      className="relative pt-[56%] w-full"
       onClick={togglePlay}
       onMouseMove={handleMouseMove}
     >
@@ -114,27 +114,25 @@ function VideoPlayer() {
           showControl ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="bg-black bg-opacity-30 rounded-full p-5 transition-transform hover:scale-110">
-          <svg
-            className="w-10 h-10 text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            {isPlaying ? (
-              <path
-                fillRule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
-                clipRule="evenodd"
-              />
-            ) : (
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                clipRule="evenodd"
-              />
-            )}
-          </svg>
-        </div>
+        <svg
+          className="w-14 h-14 text-white/75"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          {isPlaying ? (
+            <path
+              fillRule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
+              clipRule="evenodd"
+            />
+          ) : (
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+              clipRule="evenodd"
+            />
+          )}
+        </svg>
       </div>
     </div>
   );
@@ -158,7 +156,7 @@ export function VideoSection() {
         </motion.div>
 
         <motion.div
-          className="relative rounded-2xl overflow-hidden shadow-xl bg-crabbio-blue/30 backdrop-blur-sm"
+          className="relative rounded-2xl overflow-hidden shadow-xl bg-crabbio-blue/30 backdrop-blur-sm "
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
