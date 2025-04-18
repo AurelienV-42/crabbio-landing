@@ -1,12 +1,153 @@
-"use client"
+"use client";
 
-import { motion } from '@/lib/motion-wrapper';
+import { motion } from "@/lib/motion-wrapper";
+import { useEffect, useRef, useState } from "react";
+
+// Add TypeScript declaration for Vimeo
+declare global {
+  interface Window {
+    Vimeo?: {
+      Player: any;
+    };
+  }
+}
+
+// Video url and disable controls
+const videoUrl =
+  "https://player.vimeo.com/video/347119375?background=1&autopause=0&byline=0&title=0&portrait=0";
+const fadeCursorAfter = 750;
+
+function VideoPlayer() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showControl, setShowControl] = useState(true);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const playerRef = useRef<any>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    // Load Vimeo Player API
+    const script = document.createElement("script");
+    script.src = "https://player.vimeo.com/api/player.js";
+    script.onload = () => initializePlayer();
+    document.body.appendChild(script);
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
+  const initializePlayer = () => {
+    if (!iframeRef.current || !window.Vimeo) return;
+
+    // Create player
+    playerRef.current = new window.Vimeo.Player(iframeRef.current);
+
+    // Add event listeners
+    playerRef.current.on("play", () => {
+      setIsPlaying(true);
+      startControlTimeout();
+    });
+
+    playerRef.current.on("pause", () => {
+      setIsPlaying(false);
+      setShowControl(true);
+    });
+  };
+
+  const togglePlay = () => {
+    if (!playerRef.current) return;
+
+    if (isPlaying) {
+      playerRef.current.pause();
+    } else {
+      playerRef.current.play();
+      // Show control briefly then fade
+      setShowControl(true);
+      startControlTimeout();
+    }
+  };
+
+  const startControlTimeout = () => {
+    // Clear any existing timeout
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    // Set a new timeout to hide controls after 2 seconds
+    timeoutRef.current = setTimeout(() => {
+      if (isPlaying) {
+        setShowControl(false);
+      }
+    }, fadeCursorAfter);
+  };
+
+  const handleMouseMove = () => {
+    setShowControl(true);
+    if (isPlaying) {
+      startControlTimeout();
+    }
+  };
+
+  return (
+    <div
+      className="relative w-full pt-[56.25%]"
+      onClick={togglePlay}
+      onMouseMove={handleMouseMove}
+    >
+      <iframe
+        ref={iframeRef}
+        className="absolute inset-0 w-full h-full"
+        src={videoUrl}
+        frameBorder="0"
+        allow="autoplay; fullscreen"
+        style={{ pointerEvents: "none" }}
+      ></iframe>
+
+      {/* Play button overlay */}
+      <div
+        className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
+          showControl ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <div className="bg-black bg-opacity-30 rounded-full p-5 transition-transform hover:scale-110">
+          <svg
+            className="w-10 h-10 text-white"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            {isPlaying ? (
+              <path
+                fillRule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
+                clipRule="evenodd"
+              />
+            ) : (
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                clipRule="evenodd"
+              />
+            )}
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function VideoSection() {
   return (
-    <section id="video-section" className="section-padding bg-crabbio-secondary relative">
+    <section
+      id="video-section"
+      className="section-padding bg-crabbio-secondary relative"
+    >
       <div className="container-padding max-w-4xl mx-auto">
-        <motion.div 
+        <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,9 +155,6 @@ export function VideoSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-crabbio-cream mb-4">See Crabbio in Action</h2>
-          <p className="text-crabbio-light max-w-2xl mx-auto text-lg">
-            Watch how Crabbio protects your privacy while delivering powerful AI capabilities
-          </p>
         </motion.div>
 
         <motion.div
@@ -26,27 +164,10 @@ export function VideoSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="aspect-w-16 aspect-h-9">
-            <video
-              className="w-full h-full object-cover"
-              controls
-              poster="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg"
-              aria-label="Demonstration of Crabbio's privacy-focused AI capabilities"
-            >
-              <source
-                src="https://player.vimeo.com/external/449759940.sd.mp4?s=d5f3da46ddc17aa69a7de84f1e420610ebd2a391&profile_id=165&oauth2_token_id=57447761"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag. You can download the video
-              <a href="https://player.vimeo.com/external/449759940.sd.mp4?s=d5f3da46ddc17aa69a7de84f1e420610ebd2a391&profile_id=165&oauth2_token_id=57447761" 
-                className="text-crabbio-accent hover:underline ml-1">
-                here
-              </a>.
-            </video>
-          </div>
+          <VideoPlayer />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="mt-8 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

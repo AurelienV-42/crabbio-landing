@@ -1,9 +1,9 @@
-import { Hero } from '@/components/hero';
-import { VideoSection } from '@/components/video-section';
-import { Benefits } from '@/components/benefits';
-import { Founders } from '@/components/founders';
-import { WaveDivider } from '@/components/wave-divider';
-import { Footer } from '@/components/footer';
+import { Benefits } from "@/components/benefits";
+import { Footer } from "@/components/footer";
+import { Founders } from "@/components/founders";
+import { Hero } from "@/components/hero";
+import { VideoSection } from "@/components/video-section";
+import { WaveDivider } from "@/components/wave-divider";
 
 export default function Home() {
   return (
@@ -11,11 +11,11 @@ export default function Home() {
       <Hero />
       <WaveDivider />
       <VideoSection />
-      <WaveDivider />
-      <Benefits />
       <WaveDivider flip />
-      <Founders />
+      <Benefits />
       <WaveDivider />
+      <Founders />
+      <WaveDivider flip />
       <Footer />
     </main>
   );
