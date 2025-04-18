@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "@/lib/motion-wrapper";
+import { useTranslation } from "next-i18next";
 import { useEffect, useRef, useState } from "react";
 
 // Add TypeScript declaration for Vimeo
@@ -139,6 +140,8 @@ function VideoPlayer() {
 }
 
 export function VideoSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section
       id="video-section"
@@ -152,7 +155,7 @@ export function VideoSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-crabbio-cream mb-4">See Crabbio in Action</h2>
+          <h2 className="text-crabbio-cream mb-4">{t("video.title")}</h2>
         </motion.div>
 
         <motion.div
@@ -172,9 +175,7 @@ export function VideoSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <p className="text-crabbio-light text-sm">
-            Experience the future of privacy-focused AI technology
-          </p>
+          <p className="text-crabbio-light text-sm">{t("video.description")}</p>
         </motion.div>
       </div>
     </section>

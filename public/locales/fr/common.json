@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "bookCall": "Prendre rendez-vous",
+    "slogan": "Profitez de l'IA sans compromettre vos données.",
+    "joinEarlyAdopters": "Rejoindre les premiers utilisateurs",
+    "comingSoon": "Bientôt disponible 🚀",
+    "earlyAdoptersTitle": "Rejoignez notre programme d'adoption anticipée",
+    "earlyAdoptersDescription": "Obtenez un accès anticipé exclusif aux solutions d'IA axées sur la confidentialité de Crabbio. Les premiers utilisateurs reçoivent :",
+    "benefits": {
+      "discount": "Réduction à vie sur nos formules premium",
+      "priority": "Demandes de fonctionnalités prioritaires",
+      "access": "Accès direct à notre équipe fondatrice",
+      "shape": "Façonnez l'avenir de la technologie d'IA privée"
+    },
+    "secureSpot": "Réservez votre place",
+    "cancel": "Annuler",
+    "language": "English"
+  },
+  "video": {
+    "title": "Voir Crabbio en action",
+    "description": "Découvrez l'avenir de la technologie d'IA axée sur la confidentialité"
+  },
+  "benefits": {
+    "title": "Pourquoi choisir Crabbio",
+    "intro": "Nous avons conçu Crabbio avec votre confidentialité comme pierre angulaire. Profitez de l'IA sans sacrifier la sécurité des données.",
+    "privacy": {
+      "title": "Priorité à la vie privée",
+      "description": "Vos données ne quittent jamais votre appareil. Nous traitons tout localement pour garantir une confidentialité maximale."
+    },
+    "control": {
+      "title": "IA intelligente",
+      "description": "Des capacités d'IA puissantes qui apprennent vos préférences sans compromettre la sécurité."
+    },
+    "encryption": {
+      "title": "Chiffrement de bout en bout",
+      "description": "Chiffrement de qualité militaire pour toutes les données qui doivent être transmises."
+    },
+    "performance": {
+      "title": "Ultra rapide",
+      "description": "Des algorithmes optimisés garantissent des réponses rapides même avec un traitement local."
+    }
+  },
+  "founders": {
+    "title": "Rencontrez notre équipe",
+    "description": "Des experts passionnés qui construisent l'avenir de l'IA privée",
+    "list": [
+      {
+        "name": "Olu-Kayodé Karim Amadou",
+        "role": "Responsable des ventes et juridique",
+        "bio": "Avocat. Passionné par l'éthique des données et les relations clients.",
+        "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "linkedin": "#",
+        "email": "aurelienvpro@gmail.com"
+      },
+      {
+        "name": "Aurélien Vandaële",
+        "role": "CTO & Chef de produit",
+        "bio": "Expert en développement de plateformes mobiles et web.",
+        "image": "https://media.licdn.com/dms/image/v2/D4D03AQGSjpM6437CIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672664321954?e=1750291200&v=beta&t=n1zwF3mPXJ2IXNmBfos6-VDFqXW3sJ8Qn52yfgNqw_s",
+        "linkedin": "https://www.linkedin.com/in/aurelien-vandaele",
+        "email": "aurelienvpro@gmail.com"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Crabbio est leader dans les solutions d'IA axées sur la confidentialité. Notre mission est de rendre l'IA puissante accessible tout en protégeant vos données.",
+    "copyright": "© 2024 Crabbio. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "contact": "Contactez-nous",
+    "company": "Entreprise",
+    "aboutUs": "À propos de nous",
+    "careers": "Carrières",
+    "blog": "Blog"
+  }
+}

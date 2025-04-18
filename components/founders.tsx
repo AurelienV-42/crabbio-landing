@@ -2,37 +2,20 @@
 
 import { motion } from "@/lib/motion-wrapper";
 import { Linkedin, Mail } from "lucide-react";
-
-const founders = [
-  {
-    name: "Olu-Kayodé Karim Amadou",
-    role: "Head of Sales & Legal",
-    bio: "Lawyer. Passionate about data ethics and customer relationships.",
-    image:
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-    social: {
-      twitter: "#",
-      linkedin: "#",
-      github: "#",
-      email: "aurelienvpro@gmail.com",
-    },
-  },
-  {
-    name: "Aurélien Vandaële",
-    role: "CTO & Product Lead",
-    bio: "Expert in building mobile and web platforms.",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQGSjpM6437CIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672664321954?e=1750291200&v=beta&t=n1zwF3mPXJ2IXNmBfos6-VDFqXW3sJ8Qn52yfgNqw_s",
-    social: {
-      twitter: "#",
-      linkedin: "https://www.linkedin.com/in/aurelien-vandaele",
-      github: "#",
-      email: "aurelienvpro@gmail.com",
-    },
-  },
-];
+import { useTranslation } from "next-i18next";
 
 export function Founders() {
+  const { t } = useTranslation("common");
+
+  const founders = t("founders.list", { returnObjects: true }) as Array<{
+    name: string;
+    role: string;
+    bio: string;
+    image: string;
+    linkedin: string;
+    email: string;
+  }>;
+
   return (
     <section
       id="founders"
@@ -46,10 +29,9 @@ export function Founders() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-crabbio-cream mb-4">Meet Our Team</h2>
+          <h2 className="text-crabbio-cream mb-4">{t("founders.title")}</h2>
           <p className="text-crabbio-light max-w-2xl mx-auto text-lg">
-            Passionate experts committed to redefining the relationship between
-            AI and privacy.
+            {t("founders.description")}
           </p>
         </motion.div>
 
@@ -80,7 +62,7 @@ export function Founders() {
 
               <div className="flex space-x-4">
                 <a
-                  href={founder.social.linkedin}
+                  href={founder.linkedin}
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -88,7 +70,7 @@ export function Founders() {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href={`mailto:${founder.social.email}`}
+                  href={`mailto:${founder.email}`}
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"

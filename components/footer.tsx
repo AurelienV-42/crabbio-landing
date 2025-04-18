@@ -1,6 +1,9 @@
 import { Grab as Crab, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslation } from "next-i18next";
 
 export function Footer() {
+  const { t } = useTranslation("common");
+
   return (
     <footer id="contact" className="bg-crabbio-primary pt-16 pb-8">
       <div className="container-padding max-w-7xl mx-auto">
@@ -14,9 +17,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-crabbio-light mb-6 max-w-md">
-              Crabbio is leading the way in privacy-focused AI solutions. Our
-              mission is to make powerful AI accessible while protecting your
-              data.
+              {t("footer.description")}
             </p>
             <div className="flex space-x-4">
               <a
@@ -81,7 +82,7 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-crabbio-cream font-semibold text-lg mb-4">
-              Company
+              {t("footer.company")}
             </h4>
             <ul className="space-y-2">
               <li>
@@ -89,7 +90,7 @@ export function Footer() {
                   href="#"
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                 >
-                  About Us
+                  {t("footer.aboutUs")}
                 </a>
               </li>
               <li>
@@ -97,7 +98,7 @@ export function Footer() {
                   href="#"
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                 >
-                  Privacy Policy
+                  {t("footer.privacy")}
                 </a>
               </li>
               <li>
@@ -105,7 +106,7 @@ export function Footer() {
                   href="#"
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                 >
-                  Terms of Service
+                  {t("footer.terms")}
                 </a>
               </li>
               <li>
@@ -113,7 +114,7 @@ export function Footer() {
                   href="#"
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                 >
-                  Careers
+                  {t("footer.careers")}
                 </a>
               </li>
               <li>
@@ -121,7 +122,7 @@ export function Footer() {
                   href="#"
                   className="text-crabbio-light hover:text-crabbio-cream transition-colors"
                 >
-                  Blog
+                  {t("footer.blog")}
                 </a>
               </li>
             </ul>
@@ -130,7 +131,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-crabbio-cream font-semibold text-lg mb-4">
-              Contact Us
+              {t("footer.contact")}
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start">
@@ -171,9 +172,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-16 text-center">
-          <p className="text-crabbio-light text-sm">
-            © {new Date().getFullYear()} Crabbio. All rights reserved.
-          </p>
+          <p className="text-crabbio-light text-sm">{t("footer.copyright")}</p>
         </div>
       </div>
     </footer>

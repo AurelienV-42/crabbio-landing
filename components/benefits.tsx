@@ -2,35 +2,41 @@
 
 import { motion } from "@/lib/motion-wrapper";
 import { Brain, Lock, Shield, Speech as Speed } from "lucide-react";
+import { useTranslation } from "next-i18next";
 
-const benefits = [
-  {
-    title: "Privacy First",
-    description:
-      "Your data never leaves your device. We process everything locally to ensure maximum privacy.",
-    icon: Shield,
-  },
-  {
-    title: "Smart AI",
-    description:
-      "Powerful AI capabilities that learn your preferences without compromising security.",
-    icon: Brain,
-  },
-  {
-    title: "End-to-End Encryption",
-    description:
-      "Military-grade encryption for any data that needs to be transmitted.",
-    icon: Lock,
-  },
-  {
-    title: "Lightning Fast",
-    description:
-      "Optimized algorithms ensure quick responses even with local processing.",
-    icon: Speed,
-  },
-];
+const benefitIcons = {
+  privacy: Shield,
+  brain: Brain,
+  lock: Lock,
+  speed: Speed,
+};
 
 export function Benefits() {
+  const { t } = useTranslation("common");
+
+  const benefits = [
+    {
+      title: t("benefits.privacy.title"),
+      description: t("benefits.privacy.description"),
+      icon: benefitIcons.privacy,
+    },
+    {
+      title: t("benefits.control.title"),
+      description: t("benefits.control.description"),
+      icon: benefitIcons.brain,
+    },
+    {
+      title: t("benefits.encryption.title"),
+      description: t("benefits.encryption.description"),
+      icon: benefitIcons.lock,
+    },
+    {
+      title: t("benefits.performance.title"),
+      description: t("benefits.performance.description"),
+      icon: benefitIcons.speed,
+    },
+  ];
+
   return (
     <section
       id="benefits"
@@ -45,7 +51,7 @@ export function Benefits() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Why Choose Crabbio?
+            {t("benefits.title")}
           </motion.h2>
           <motion.p
             className="text-crabbio-light max-w-2xl mx-auto text-lg"
@@ -54,8 +60,7 @@ export function Benefits() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We built Crabbio with your privacy as the cornerstone. Experience AI
-            without sacrificing data security.
+            {t("benefits.intro")}
           </motion.p>
         </div>
 

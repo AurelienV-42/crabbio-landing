@@ -2,11 +2,16 @@
 
 import { Button } from "@/components/ui/button";
 import { Grab as Crab } from "lucide-react";
+import { useTranslation } from "next-i18next";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export function Hero() {
   const [scrolled, setScrolled] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const { t } = useTranslation("common");
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +44,11 @@ export function Hero() {
     setShowPopup(false);
   };
 
+  const changeLanguage = () => {
+    const newLocale = router.locale === "en" ? "fr" : "en";
+    router.push(router.pathname, router.asPath, { locale: newLocale });
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col">
       {/* Navigation */}
@@ -51,17 +61,29 @@ export function Hero() {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Crab className="text-crabbio-cream h-8 w-8" />
-            <span className="text-crabbio-cream font-poppins font-bold text-2xl">
-              Crabbio
-            </span>
+            <Link href="/" className="flex items-center space-x-2">
+              <Crab className="text-crabbio-cream h-8 w-8" />
+              <span className="text-crabbio-cream font-poppins font-bold text-2xl">
+                Crabbio
+              </span>
+            </Link>
             <span className="bg-crabbio-accent text-crabbio-blue text-xs font-semibold px-2 py-1 rounded-full ml-2 animate-pulse-gentle">
-              Coming Soon 🚀
+              {t("hero.comingSoon")}
             </span>
           </div>
-          <Button variant="default" size="sm" onClick={openCalendar}>
-            Book a call
-          </Button>
+          <div className="flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={changeLanguage}
+              className="text-crabbio-cream hover:text-crabbio-accent"
+            >
+              {t("hero.language")}
+            </Button>
+            <Button variant="default" size="sm" onClick={openCalendar}>
+              {t("hero.bookCall")}
+            </Button>
+          </div>
         </div>
       </nav>
 
@@ -74,11 +96,7 @@ export function Hero() {
           </div>
 
           <h1 className="text-crabbio-cream font-bold mb-6 leading-tight">
-            Enjoy AI without <br className="md:hidden" />
-            <span className="text-crabbio-accent animate-pulse-gentle">
-              compromising
-            </span>{" "}
-            your data.
+            {t("hero.slogan")}
           </h1>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
@@ -88,7 +106,7 @@ export function Hero() {
               className="w-full md:w-auto"
               onClick={openCalendar}
             >
-              Book a Call
+              {t("hero.bookCall")}
             </Button>
             <Button
               variant="secondary"
@@ -96,7 +114,7 @@ export function Hero() {
               className="w-full md:w-auto"
               onClick={() => setShowPopup(true)}
             >
-              Join Early Adopters
+              {t("hero.joinEarlyAdopters")}
             </Button>
           </div>
 
@@ -136,17 +154,16 @@ export function Hero() {
               </svg>
             </button>
             <h3 className="text-xl font-bold text-crabbio-cream mb-3">
-              Join Our Early Adopters Program
+              {t("hero.earlyAdoptersTitle")}
             </h3>
             <p className="text-crabbio-cream mb-4">
-              Get exclusive early access to Crabbio&apos;s privacy-focused AI
-              solutions. Early adopters receive:
+              {t("hero.earlyAdoptersDescription")}
             </p>
             <ul className="text-crabbio-cream mb-4 list-disc pl-5 space-y-1">
-              <li>Lifetime discount on our premium tiers</li>
-              <li>Priority feature requests</li>
-              <li>Direct access to our founding team</li>
-              <li>Shape the future of private AI technology</li>
+              <li>{t("hero.benefits.discount")}</li>
+              <li>{t("hero.benefits.priority")}</li>
+              <li>{t("hero.benefits.access")}</li>
+              <li>{t("hero.benefits.shape")}</li>
             </ul>
             <div className="flex gap-3 mt-6">
               <Button
@@ -154,14 +171,14 @@ export function Hero() {
                 className="w-full"
                 onClick={openStripeCheckout}
               >
-                Secure Your Spot
+                {t("hero.secureSpot")}
               </Button>
               <Button
                 variant="outline"
                 className="w-auto"
                 onClick={() => setShowPopup(false)}
               >
-                Cancel
+                {t("hero.cancel")}
               </Button>
             </div>
           </div>

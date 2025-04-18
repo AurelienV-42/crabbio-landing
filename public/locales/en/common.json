@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "bookCall": "Book a call",
+    "slogan": "Enjoy AI without compromising your data.",
+    "joinEarlyAdopters": "Join Early Adopters",
+    "comingSoon": "Coming Soon 🚀",
+    "earlyAdoptersTitle": "Join Our Early Adopters Program",
+    "earlyAdoptersDescription": "Get exclusive early access to Crabbio's privacy-focused AI solutions. Early adopters receive:",
+    "benefits": {
+      "discount": "Lifetime discount on our premium tiers",
+      "priority": "Priority feature requests",
+      "access": "Direct access to our founding team",
+      "shape": "Shape the future of private AI technology"
+    },
+    "secureSpot": "Secure Your Spot",
+    "cancel": "Cancel",
+    "language": "Français"
+  },
+  "video": {
+    "title": "See Crabbio in Action",
+    "description": "Experience the future of privacy-focused AI technology"
+  },
+  "benefits": {
+    "title": "Why Choose Crabbio",
+    "intro": "We built Crabbio with your privacy as the cornerstone. Experience AI without sacrificing data security.",
+    "privacy": {
+      "title": "Privacy First",
+      "description": "Your data never leaves your device. We process everything locally to ensure maximum privacy."
+    },
+    "control": {
+      "title": "Smart AI",
+      "description": "Powerful AI capabilities that learn your preferences without compromising security."
+    },
+    "encryption": {
+      "title": "End-to-End Encryption",
+      "description": "Military-grade encryption for any data that needs to be transmitted."
+    },
+    "performance": {
+      "title": "Lightning Fast",
+      "description": "Optimized algorithms ensure quick responses even with local processing."
+    }
+  },
+  "founders": {
+    "title": "Meet Our Team",
+    "description": "Passionate experts building the future of private AI",
+    "list": [
+      {
+        "name": "Olu-Kayodé Karim Amadou",
+        "role": "Head of Sales & Legal",
+        "bio": "Lawyer. Passionate about data ethics and customer relationships.",
+        "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "linkedin": "#",
+        "email": "aurelienvpro@gmail.com"
+      },
+      {
+        "name": "Aurélien Vandaële",
+        "role": "CTO & Product Lead",
+        "bio": "Expert in building mobile and web platforms.",
+        "image": "https://media.licdn.com/dms/image/v2/D4D03AQGSjpM6437CIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672664321954?e=1750291200&v=beta&t=n1zwF3mPXJ2IXNmBfos6-VDFqXW3sJ8Qn52yfgNqw_s",
+        "linkedin": "https://www.linkedin.com/in/aurelien-vandaele",
+        "email": "aurelienvpro@gmail.com"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Crabbio is leading the way in privacy-focused AI solutions. Our mission is to make powerful AI accessible while protecting your data.",
+    "copyright": "© 2024 Crabbio. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "blog": "Blog"
+  }
+}
