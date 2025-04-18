@@ -50,13 +50,27 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col">
+    <section className="bg-crabbio-primary relative min-h-screen flex flex-col">
+      {/* Background Image */}
+      <div
+        className={`absolute -top-20 left-0 w-full h-[50vh] z-0 transition-opacity duration-1000 ${
+          scrolled ? "opacity-20" : "opacity-60"
+        }`}
+        style={{
+          backgroundImage: 'url("/waves.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundBlendMode: "overlay",
+        }}
+      />
+
       {/* Navigation */}
       <nav
         className={`w-full py-4 px-6 md:px-10 fixed top-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-crabbio-blue/95 backdrop-blur-sm shadow-md"
-            : "bg-transparent"
+            : "bg-crabbio-blue/20"
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">

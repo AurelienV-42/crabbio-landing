@@ -1,14 +1,12 @@
-import React from 'react';
-
 export interface WaveDividerProps {
   flip?: boolean;
 }
 
 export function WaveDivider({ flip = false }: WaveDividerProps) {
   return (
-    <div className="relative w-full h-24 md:h-32 overflow-hidden">
+    <div className="relative w-[135%] h-24 md:h-32 overflow-hidden">
       <svg
-        className={`absolute w-full h-full ${flip ? 'rotate-180' : ''}`}
+        className={`absolute w-full h-full ${flip ? "rotate-180" : ""}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
