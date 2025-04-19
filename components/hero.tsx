@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Grab as Crab } from "lucide-react";
+import { Logo } from "@/components/ui/logo";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -76,7 +76,7 @@ export function Hero() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center space-x-2">
-              <Crab className="text-crabbio-cream h-8 w-8" />
+              <Logo className="text-crabbio-cream h-8 w-8" />
               <span className="text-crabbio-cream font-poppins font-bold text-2xl">
                 Crabbio
               </span>
@@ -106,7 +106,7 @@ export function Hero() {
         <div className="container-padding max-w-6xl mx-auto text-center">
           <div className="relative mb-4 inline-block">
             <div className="absolute inset-0 bg-crabbio-accent/20 blur-3xl rounded-full"></div>
-            <Crab className="text-crabbio-cream h-20 w-20 md:h-24 md:w-24 relative animate-float mb-4 mx-auto" />
+            <Logo className="text-crabbio-cream h-20 w-20 md:h-24 md:w-24 relative animate-float mb-4 mx-auto" />
           </div>
 
           <h1 className="text-crabbio-cream font-bold mb-6 leading-tight">

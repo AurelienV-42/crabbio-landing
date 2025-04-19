@@ -16,24 +16,24 @@ export function Benefits() {
 
   const benefits = [
     {
-      title: t("benefits.privacy.title"),
-      description: t("benefits.privacy.description"),
-      icon: benefitIcons.privacy,
-    },
-    {
-      title: t("benefits.control.title"),
-      description: t("benefits.control.description"),
+      title: t("benefits.accessControl.title"),
+      description: t("benefits.accessControl.description"),
       icon: benefitIcons.brain,
     },
     {
-      title: t("benefits.encryption.title"),
-      description: t("benefits.encryption.description"),
+      title: t("benefits.protection.title"),
+      description: t("benefits.protection.description"),
       icon: benefitIcons.lock,
     },
     {
-      title: t("benefits.performance.title"),
-      description: t("benefits.performance.description"),
+      title: t("benefits.monitoring.title"),
+      description: t("benefits.monitoring.description"),
       icon: benefitIcons.speed,
+    },
+    {
+      title: t("benefits.privacy.title"),
+      description: t("benefits.privacy.description"),
+      icon: benefitIcons.privacy,
     },
   ];
 

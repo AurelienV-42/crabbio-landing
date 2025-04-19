@@ -23,21 +23,21 @@
   "benefits": {
     "title": "Why Choose Crabbio",
     "intro": "We built Crabbio with your privacy as the cornerstone. Experience AI without sacrificing data security.",
+    "accessControl": {
+      "title": "Selective AI Access",
+      "description": "Allow only approved generative AIs across your organization to maintain control and compliance."
+    },
+    "protection": {
+      "title": "Sensitive Data Protection",
+      "description": "Automatically detects and prevents sharing of confidential information like API keys and credentials."
+    },
+    "monitoring": {
+      "title": "Team Usage Dashboard",
+      "description": "Visualize, track, and manage how your teams use generative AI tools in real-time."
+    },
     "privacy": {
       "title": "Privacy First",
       "description": "Your data never leaves your device. We process everything locally to ensure maximum privacy."
-    },
-    "control": {
-      "title": "Smart AI",
-      "description": "Powerful AI capabilities that learn your preferences without compromising security."
-    },
-    "encryption": {
-      "title": "End-to-End Encryption",
-      "description": "Military-grade encryption for any data that needs to be transmitted."
-    },
-    "performance": {
-      "title": "Lightning Fast",
-      "description": "Optimized algorithms ensure quick responses even with local processing."
     }
   },
   "founders": {
@@ -63,7 +63,7 @@
     ]
   },
   "footer": {
-    "description": "Crabbio is leading the way in privacy-focused AI solutions. Our mission is to make powerful AI accessible while protecting your data.",
+    "description": "At Crabbio, we're committed to making powerful AI accessible while ensuring your data remains completely protected and private.",
     "copyright": "© 2024 Crabbio. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",

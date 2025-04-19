@@ -1,5 +1,6 @@
-import { Grab as Crab, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "next-i18next";
+import { Logo } from "./ui/logo";
 
 export function Footer() {
   const { t } = useTranslation("common");
@@ -11,7 +12,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Crab className="text-crabbio-cream h-8 w-8" />
+              <Logo className="text-crabbio-cream h-8 w-8" />
               <span className="text-crabbio-cream font-poppins font-bold text-2xl">
                 Crabbio
               </span>

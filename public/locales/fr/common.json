@@ -23,21 +23,21 @@
   "benefits": {
     "title": "Pourquoi choisir Crabbio",
     "intro": "Nous avons conçu Crabbio avec votre confidentialité comme pierre angulaire. Profitez de l'IA sans sacrifier la sécurité des données.",
+    "accessControl": {
+      "title": "Accès IA Sélectif",
+      "description": "Autorisez uniquement les IA génératives validées au sein de votre organisation pour garder le contrôle et rester conforme."
+    },
+    "protection": {
+      "title": "Protection des Données Sensibles",
+      "description": "Détecte et bloque automatiquement le partage d’informations confidentielles comme les clés API ou les identifiants."
+    },
+    "monitoring": {
+      "title": "Tableau de Bord Équipes",
+      "description": "Visualisez, suivez et gérez l’usage des outils IA générative par vos équipes en temps réel."
+    },
     "privacy": {
-      "title": "Priorité à la vie privée",
-      "description": "Vos données ne quittent jamais votre appareil. Nous traitons tout localement pour garantir une confidentialité maximale."
-    },
-    "control": {
-      "title": "IA intelligente",
-      "description": "Des capacités d'IA puissantes qui apprennent vos préférences sans compromettre la sécurité."
-    },
-    "encryption": {
-      "title": "Chiffrement de bout en bout",
-      "description": "Chiffrement de qualité militaire pour toutes les données qui doivent être transmises."
-    },
-    "performance": {
-      "title": "Ultra rapide",
-      "description": "Des algorithmes optimisés garantissent des réponses rapides même avec un traitement local."
+      "title": "Confidentialité Totale",
+      "description": "Vos données ne quittent jamais votre appareil. Tout est traité localement pour une confidentialité maximale."
     }
   },
   "founders": {
@@ -63,7 +63,7 @@
     ]
   },
   "footer": {
-    "description": "Crabbio est leader dans les solutions d'IA axées sur la confidentialité. Notre mission est de rendre l'IA puissante accessible tout en protégeant vos données.",
+    "description": "Chez Crabbio, nous nous engageons à rendre l'IA puissante accessible tout en protégeant vos données.",
     "copyright": "© 2024 Crabbio. Tous droits réservés.",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
