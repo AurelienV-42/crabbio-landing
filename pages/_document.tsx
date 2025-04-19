@@ -15,9 +15,13 @@ class MyDocument extends Document {
   render() {
     const { locale } = this.props.__NEXT_DATA__;
     return (
-      <Html lang={locale} suppressHydrationWarning>
+      <Html lang={locale || "en"} suppressHydrationWarning>
         <Head>
-          {/* Document head contents, like fonts or preloads can go here */}
+          <meta
+            name="description"
+            content="Enjoy AI without compromising your data. Crabbio is a privacy-focused AI tool."
+          />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
