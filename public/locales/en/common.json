@@ -1,14 +1,14 @@
 {
   "hero": {
-    "bookCall": "Book a call",
-    "slogan": "Enjoy AI without compromising your data.",
-    "joinEarlyAdopters": "Join Early Adopters",
+    "bookDemo": "Book a demo",
+    "slogan": "Embrace AI without compromising your data.",
+    "sloganDescription": "Crabbio spots risks before they leak, so your team can explore AI safely.",
+    "joinEarlyAdopters": "Join Early Adopters 🚀",
     "comingSoon": "Coming Soon 🚀",
     "earlyAdoptersTitle": "Join Our Early Adopters Program",
     "earlyAdoptersDescription": "Get exclusive early access to Crabbio's privacy-focused AI solutions. Early adopters receive:",
     "benefits": {
       "discount": "Lifetime discount on our premium tiers",
-      "priority": "Priority feature requests",
       "access": "Direct access to our founding team",
       "shape": "Shape the future of private AI technology"
     },
@@ -40,25 +40,40 @@
       "description": "Your data never leaves your device. We process everything locally to ensure maximum privacy."
     }
   },
+  "whyItMatters": {
+    "title": "Why it matters",
+    "description": "Sensitive data and GenAI don't mix well. Here's the reality.",
+    "dataPoints": {
+      "sensitive": {
+        "description": "of corporate data put into AI tools are sensitive"
+      },
+      "bypass": {
+        "description": "of SaaS logins for AI tools bypass IT oversight"
+      },
+      "jump": {
+        "description": "jump in sensitive data shared with GenAI tools in 2023"
+      }
+    }
+  },
   "founders": {
     "title": "Meet Our Team",
     "description": "Passionate experts building the future of private AI",
     "list": [
       {
         "name": "Olu-Kayodé Karim Amadou",
-        "role": "Head of Sales & Legal",
-        "bio": "Lawyer. Passionate about data ethics and customer relationships.",
-        "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "linkedin": "#",
-        "email": "aurelienvpro@gmail.com"
+        "role": "CEO & Co-Founder",
+        "bio": "10+ years experience in compliance, governance and data protection, with leading organizations like Airbus and Raytheon Technologies.",
+        "image": "olu.jpeg",
+        "linkedin": "https://www.linkedin.com/in/olu-kayodekarim/",
+        "email": "olu.amadou@crabbio.com"
       },
       {
         "name": "Aurélien Vandaële",
         "role": "CTO & Product Lead",
         "bio": "Expert in building mobile and web platforms.",
-        "image": "https://media.licdn.com/dms/image/v2/D4D03AQGSjpM6437CIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672664321954?e=1750291200&v=beta&t=n1zwF3mPXJ2IXNmBfos6-VDFqXW3sJ8Qn52yfgNqw_s",
+        "image": "aurel.png",
         "linkedin": "https://www.linkedin.com/in/aurelien-vandaele",
-        "email": "aurelienvpro@gmail.com"
+        "email": "aurelien.vandaele@crabbio.com"
       }
     ]
   },

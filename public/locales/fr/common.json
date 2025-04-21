@@ -1,14 +1,14 @@
 {
   "hero": {
-    "bookCall": "Prendre rendez-vous",
+    "bookDemo": "Book une démo",
     "slogan": "Profitez de l'IA sans compromettre vos données.",
-    "joinEarlyAdopters": "Rejoindre les premiers utilisateurs",
+    "sloganDescription": "Crabbio détecte les risques avant qu'ils ne soient compromis, pour que votre équipe puisse explorer l'IA en toute sécurité.",
+    "joinEarlyAdopters": "Rejoindre les premiers utilisateurs 🚀",
     "comingSoon": "Bientôt disponible 🚀",
     "earlyAdoptersTitle": "Rejoignez notre programme d'adoption anticipée",
     "earlyAdoptersDescription": "Obtenez un accès anticipé exclusif aux solutions d'IA axées sur la confidentialité de Crabbio. Les premiers utilisateurs reçoivent :",
     "benefits": {
       "discount": "Réduction à vie sur nos formules premium",
-      "priority": "Demandes de fonctionnalités prioritaires",
       "access": "Accès direct à notre équipe fondatrice",
       "shape": "Façonnez l'avenir de la technologie d'IA privée"
     },
@@ -29,15 +29,30 @@
     },
     "protection": {
       "title": "Protection des Données Sensibles",
-      "description": "Détecte et bloque automatiquement le partage d’informations confidentielles comme les clés API ou les identifiants."
+      "description": "Détecte et bloque automatiquement le partage d'informations confidentielles comme les clés API ou les identifiants."
     },
     "monitoring": {
       "title": "Tableau de Bord Équipes",
-      "description": "Visualisez, suivez et gérez l’usage des outils IA générative par vos équipes en temps réel."
+      "description": "Visualisez, suivez et gérez l'usage des outils IA générative par vos équipes en temps réel."
     },
     "privacy": {
       "title": "Confidentialité Totale",
       "description": "Vos données ne quittent jamais votre appareil. Tout est traité localement pour une confidentialité maximale."
+    }
+  },
+  "whyItMatters": {
+    "title": "Pourquoi c'est important",
+    "description": "Les données sensibles et l'IA générative ne font pas bon ménage. Voici la réalité.",
+    "dataPoints": {
+      "sensitive": {
+        "description": "des données d'entreprise transférées aux outils d'IA sont sensibles"
+      },
+      "bypass": {
+        "description": "des connexions SaaS pour les outils d'IA contournent la supervision informatique"
+      },
+      "jump": {
+        "description": "d'augmentation des données sensibles partagées avec les outils d'IA générative en 2023"
+      }
     }
   },
   "founders": {
@@ -46,19 +61,19 @@
     "list": [
       {
         "name": "Olu-Kayodé Karim Amadou",
-        "role": "Responsable des ventes et juridique",
-        "bio": "Avocat. Passionné par l'éthique des données et les relations clients.",
-        "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "linkedin": "#",
-        "email": "aurelienvpro@gmail.com"
+        "role": "CEO & Co-Fondateur",
+        "bio": "10 ans d'expérience dans la conformité, la gouvernance et la protection des données, avec des organisations leaders comme Airbus et Raytheon Technologies.",
+        "image": "olu.jpeg",
+        "linkedin": "https://www.linkedin.com/in/olu-kayodekarim/",
+        "email": "olu.amadou@crabbio.com"
       },
       {
         "name": "Aurélien Vandaële",
-        "role": "CTO & Chef de produit",
+        "role": "CTO & Co-fondateur",
         "bio": "Expert en développement de plateformes mobiles et web.",
-        "image": "https://media.licdn.com/dms/image/v2/D4D03AQGSjpM6437CIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672664321954?e=1750291200&v=beta&t=n1zwF3mPXJ2IXNmBfos6-VDFqXW3sJ8Qn52yfgNqw_s",
+        "image": "aurel.png",
         "linkedin": "https://www.linkedin.com/in/aurelien-vandaele",
-        "email": "aurelienvpro@gmail.com"
+        "email": "aurelien.vandaele@crabbio.com"
       }
     ]
   },

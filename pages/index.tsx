@@ -4,6 +4,7 @@ import { Founders } from "@/components/founders";
 import { Hero } from "@/components/hero";
 import { VideoSection } from "@/components/video-section";
 import { WaveDivider } from "@/components/wave-divider";
+import { WhyItMatters } from "@/components/why-it-matters";
 import type { GetStaticProps, NextPage } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <VideoSection />
       <WaveDivider flip />
       <Benefits />
+      <WhyItMatters />
       <WaveDivider />
       <Founders />
       <WaveDivider flip />

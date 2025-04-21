@@ -56,9 +56,7 @@ export function Founders() {
                 {founder.name}
               </h3>
               <p className="text-crabbio-accent mb-3">{founder.role}</p>
-              <p className="text-crabbio-light mb-4 text-sm h-10">
-                {founder.bio}
-              </p>
+              <p className="text-crabbio-light mb-4 text-sm">{founder.bio}</p>
 
               <div className="flex space-x-4">
                 <a

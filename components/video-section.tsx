@@ -116,7 +116,7 @@ function VideoPlayer() {
         }`}
       >
         <svg
-          className="w-14 h-14 text-white/75"
+          className="w-14 h-14 text-black/75"
           fill="currentColor"
           viewBox="0 0 20 20"
         >

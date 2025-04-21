@@ -19,7 +19,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Enjoy AI without compromising your data. Crabbio is a privacy-focused AI tool."
+            content="Embrace AI without compromising your data. Crabbio is a privacy-focused AI tool."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>

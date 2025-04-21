@@ -95,7 +95,7 @@ export function Hero() {
               {t("hero.language")}
             </Button>
             <Button variant="default" size="sm" onClick={openCalendar}>
-              {t("hero.bookCall")}
+              {t("hero.bookDemo")}
             </Button>
           </div>
         </div>
@@ -109,9 +109,10 @@ export function Hero() {
             <Logo className="text-crabbio-cream h-20 w-20 md:h-24 md:w-24 relative animate-float mb-4 mx-auto" />
           </div>
 
-          <h1 className="text-crabbio-cream font-bold mb-6 leading-tight">
+          <h2 className="text-crabbio-cream font-bold mb-6 leading-tight">
             {t("hero.slogan")}
-          </h1>
+          </h2>
+          <h4 className="text-white mb-6">{t("hero.sloganDescription")}</h4>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
             <Button
@@ -120,7 +121,7 @@ export function Hero() {
               className="w-full md:w-auto"
               onClick={openCalendar}
             >
-              {t("hero.bookCall")}
+              {t("hero.bookDemo")}
             </Button>
             <Button
               variant="secondary"
@@ -175,7 +176,6 @@ export function Hero() {
             </p>
             <ul className="text-crabbio-cream mb-4 list-disc pl-5 space-y-1">
               <li>{t("hero.benefits.discount")}</li>
-              <li>{t("hero.benefits.priority")}</li>
               <li>{t("hero.benefits.access")}</li>
               <li>{t("hero.benefits.shape")}</li>
             </ul>
