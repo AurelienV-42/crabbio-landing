@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "Rendez l'IA sûre pour votre entreprise",
+    "subtitle": "Transformez votre entreprise avec l'IA, en toute confiance. Notre plateforme garantit la protection de vos données pendant que vos équipes exploitent tout le potentiel de l'intelligence artificielle.",
+    "cta": "Réserver une démo",
+    "trustBadge": "Aucun code requis, prêt à tester",
+    "comingSoon": "Bientôt disponible 🚀"
+  },
+  "header": {
+    "showExtension": "Afficher l'extension",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "extension": {
+    "dataProtection": "Protection des données",
+    "teamAccess": "Accès d'équipe",
+    "usageMonitoring": "Suivi d'utilisation",
+    "permissions": "Permissions IA"
+  },
+  "productDemo": {
+    "securePrompts": {
+      "title": "Sécurisez vos prompts",
+      "description": "Détecte et empêche automatiquement le partage d'informations confidentielles comme les clés API et les identifiants."
+    },
+    "selectiveAccess": {
+      "title": "Accès IA sélectif",
+      "description": "Autorisez uniquement les IA génératives approuvées dans votre organisation pour maintenir le contrôle et la conformité."
+    }
+  },
+  "whyChoose": {
+    "title": "Pourquoi choisir Crabbio",
+    "features": {
+      "access": "Accès IA sélectif",
+      "protection": "Protection des données sensibles",
+      "dashboard": "Tableau de bord d'équipe",
+      "privacy": "Confidentialité avant tout"
+    }
+  },
+  "stats": {
+    "title": "Pourquoi c'est important",
+    "stat1": "des données d'entreprise mises dans les outils IA sont sensibles",
+    "stat2": "des connexions SaaS pour les outils IA contournent la supervision IT",
+    "stat3": "des équipes de sécurité signalent un manque de visibilité des données en temps réel"
+  },
+  "founders": {
+    "title": "Rencontrez l'équipe de Crabbio",
+    "subtitle": "Nous sommes une équipe d'experts en sécurité et de chercheurs en IA avec pour mission de rendre l'adoption de l'IA sûre et sécurisée pour tous.",
+    "roles": {
+      "ceo": "PDG & Co-fondateur",
+      "cto": "CTO & Co-fondateur"
+    },
+    "bios": {
+      "olu": "10+ ans d'expérience en conformité, gouvernance et protection des données, avec des organisations leaders comme Airbus et Raytheon Technologies.",
+      "aurelien": "8+ ans d'expérience dans le développement de plateformes mobiles et web. Spécialisé en React, design UX et ancien professeur d'informatique."
+    },
+    "quotes": {
+      "olu": "L'IA doit augmenter le potentiel humain tout en préservant la confidentialité et la confiance.",
+      "aurelien": "L'avenir de l'IA est sécurisé par conception."
+    }
+  },
+  "footer": {
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalités",
+      "security": "Sécurité",
+      "enterprise": "Entreprise",
+      "pricing": "Tarifs"
+    },
+    "company": {
+      "title": "Entreprise",
+      "about": "À propos",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "resources": {
+      "title": "Ressources",
+      "documentation": "Documentation",
+      "guides": "Guides",
+      "api": "Référence API",
+      "status": "Statut"
+    },
+    "legal": {
+      "title": "Légal",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "security": "Sécurité",
+      "cookies": "Politique des cookies"
+    },
+    "copyright": "© {{year}} Crabbio, Inc. Tous droits réservés.",
+    "language": {
+      "select": "Sélectionner la langue",
+      "en": "Anglais",
+      "fr": "Français"
+    }
+  }
+}
