@@ -8,7 +8,7 @@ import { gradients } from '../styles/gradients';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showExtension, setShowExtension] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,10 +24,10 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4 md:py-6">
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-2">
-            <Logo className={`w-6 h-6 text-blue-500`} />
-            <span className={`text-xl font-bold ${gradients.text.primary}`}>
-              Crabbio
-            </span>
+              <Logo className={`w-6 h-6 text-blue-500`} />
+              <span className={`text-xl font-bold ${gradients.text.primary}`}>
+                Crabbio
+              </span>
             </div>
             
             {/* Coming soon badge */}
@@ -46,7 +46,16 @@ const Header: React.FC = () => {
           
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Book a Demo button */}
+          {/* <a
+          
+                href={i18n.language === 'fr' ? 'https://crabbio.notion.site/guides-fr' : 'https://crabbio.notion.site/guides-en'}
+                className="text-gray-600 hover:text-gray-900 text-sm mr-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('footer.guides')}
+              </a> */}
+                     {/* Book a Demo button */}
             <div className="relative group">
               <div className={`absolute -inset-0.5 ${gradients.border.primary} rounded-md opacity-75 blur-sm group-hover:opacity-100 group-hover:blur-md transition duration-1000 group-hover:duration-200 animate-gradient`}></div>
               <button onClick={() => window.open(links.bookADemo, '_blank')} className="relative px-4 py-2 rounded-md leading-none bg-white">
@@ -87,6 +96,14 @@ const Header: React.FC = () => {
         <div className="md:hidden bg-white border-t">
           <div className="max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col space-y-4 py-4">
+              <a
+                href={i18n.language === 'fr' ? 'https://crabbio.notion.site/guides-fr' : 'https://crabbio.notion.site/guides-en'}
+                className="text-gray-600 hover:text-gray-900 text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('footer.guides')}
+              </a>
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-md opacity-75 blur-sm group-hover:opacity-100 group-hover:blur-md transition duration-1000 group-hover:duration-200 animate-gradient"></div>
                 <button className="relative w-full px-4 py-2 bg-white rounded-md leading-none">
