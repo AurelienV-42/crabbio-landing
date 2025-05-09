@@ -1,8 +1,8 @@
 import { Bell, Layout, Shield, Users } from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { gradients } from '../styles/gradients';
 import links from '../config/links';
+import { gradients } from '../styles/gradients';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -15,9 +15,9 @@ const Hero: React.FC = () => {
       <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-20 flex flex-col items-center">
         {/* Main headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-6 leading-tight mt-8 sm:mt-12">
-          <span className="text-gray-900">Make</span>{' '}
-          <span className={gradients.text.primary}>AI Safe</span>{' '}
-          <span className="text-gray-900">for your Business</span>
+          <span className="text-gray-900">{t('hero.title0')}</span>{' '}
+          <span className={gradients.text.primary}>{t('hero.title1')}</span>{' '}
+          <span className="text-gray-900">{t('hero.title2')}</span>
         </h1>
         
         {/* Subheadline */}
