@@ -17,6 +17,15 @@ function App() {
     if (link) {
       link.href = '/favicon.ico';
     }
+
+    // Add canonical link
+    let canonicalLink = document.querySelector("link[rel='canonical']") as HTMLLinkElement;
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.href = 'https://www.crabbio.com';
   }, []);
 
   return (
