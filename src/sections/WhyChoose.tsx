@@ -9,38 +9,38 @@ const WhyChoose: React.FC = () => {
     {
       icon: <Users className="w-6 h-6 text-blue-500" />,
       title: t('whyChoose.features.access'),
-      description: 'Controls approved generative AIs access'
+      description: 'Controls approved generative AIs access',
     },
     {
       icon: <Shield className="w-6 h-6 text-teal-500" />,
       title: t('whyChoose.features.protection'),
-      description: 'Detects and prevents sharing of confidential information'
+      description: 'Detects and prevents sharing of confidential information',
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-purple-500" />,
       title: t('whyChoose.features.dashboard'),
-      description: 'Visualizes and tracks AI tools usage'
+      description: 'Visualizes and tracks AI tools usage',
     },
     {
       icon: <Lock className="w-6 h-6 text-indigo-500" />,
       title: t('whyChoose.features.privacy'),
-      description: 'Emphasizes data security and privacy'
-    }
+      description: 'Emphasizes data security and privacy',
+    },
   ];
 
   const stats = [
     {
       value: '27%',
-      label: t('stats.stat1')
+      label: t('stats.stat1'),
     },
     {
       value: '80%',
-      label: t('stats.stat2')
+      label: t('stats.stat2'),
     },
     {
       value: '53%',
-      label: t('stats.stat3')
-    }
+      label: t('stats.stat3'),
+    },
   ];
 
   return (
@@ -71,21 +71,15 @@ const WhyChoose: React.FC = () => {
 
         {/* Stats Section */}
         <div>
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            {t('stats.title')}
-          </h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">{t('stats.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div
                 key={index}
                 className="text-center p-6 bg-white rounded-xl border border-gray-100 shadow-sm"
               >
-                <div className="text-4xl font-bold text-blue-600 mb-3">
-                  {stat.value}
-                </div>
-                <p className="text-gray-600">
-                  {stat.label}
-                </p>
+                <div className="text-4xl font-bold text-blue-600 mb-3">{stat.value}</div>
+                <p className="text-gray-600">{stat.label}</p>
               </div>
             ))}
           </div>

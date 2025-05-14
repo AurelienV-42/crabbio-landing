@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
     <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden">
       {/* Background gradient */}
       <div className={`absolute inset-0 ${gradients.background.primary}`}></div>
-      
+
       <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-20 flex flex-col items-center">
         {/* Main headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-6 leading-tight mt-8 sm:mt-12">
@@ -19,19 +19,22 @@ const Hero: React.FC = () => {
           <span className={gradients.text.primary}>{t('hero.title1')}</span>{' '}
           <span className="text-gray-900">{t('hero.title2')}</span>
         </h1>
-        
+
         {/* Subheadline */}
         <p className="text-base sm:text-lg text-center text-gray-600 max-w-2xl mb-8 sm:mb-12">
           {t('hero.subtitle')}
         </p>
-        
+
         {/* CTA Button */}
         <div className="relative group mb-16">
-          <div className={`absolute -inset-0.5 ${gradients.border.primary} rounded-lg opacity-75 blur-sm group-hover:opacity-100 group-hover:blur-xs transition duration-1000 group-hover:duration-200 animate-gradient`}></div>
-          <button onClick={() => window.open(links.bookADemo, '_blank')} className="relative px-8 py-4 bg-white rounded-lg leading-none">
-            <span className={gradients.text.primary}>
-              {t('hero.cta')}
-            </span>
+          <div
+            className={`absolute -inset-0.5 ${gradients.border.primary} rounded-lg opacity-75 blur-sm group-hover:opacity-100 group-hover:blur-xs transition duration-1000 group-hover:duration-200 animate-gradient`}
+          ></div>
+          <button
+            onClick={() => window.open(links.bookADemo, '_blank')}
+            className="relative px-8 py-4 bg-white rounded-lg leading-none"
+          >
+            <span className={gradients.text.primary}>{t('hero.cta')}</span>
           </button>
         </div>
 
@@ -66,7 +69,9 @@ const Hero: React.FC = () => {
                     <Shield className="w-5 h-5 text-blue-600" />
                     <h3 className="font-medium text-gray-900">Security Status</h3>
                   </div>
-                  <span className="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">Protected</span>
+                  <span className="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+                    Protected
+                  </span>
                 </div>
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">

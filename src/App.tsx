@@ -11,7 +11,7 @@ function App() {
   // Update document title
   useEffect(() => {
     document.title = 'Crabbio - Make AI Safe for your Business';
-    
+
     // Update favicon to use static file
     const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
     if (link) {

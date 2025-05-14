@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-
+import { useEffect, useRef, useState } from 'react';
 
 const fadeCursorAfter = 2000;
 const VideoPlayer = ({ videoId }: { videoId: string }) => {
@@ -11,8 +10,8 @@ const VideoPlayer = ({ videoId }: { videoId: string }) => {
 
   useEffect(() => {
     // Load Vimeo Player API
-    const script = document.createElement("script");
-    script.src = "https://player.vimeo.com/api/player.js";
+    const script = document.createElement('script');
+    script.src = 'https://player.vimeo.com/api/player.js';
     script.onload = () => initializePlayer();
     document.body.appendChild(script);
 
@@ -33,12 +32,12 @@ const VideoPlayer = ({ videoId }: { videoId: string }) => {
     playerRef.current = new window.Vimeo.Player(iframeRef.current);
 
     // Add event listeners
-    playerRef.current.on("play", () => {
+    playerRef.current.on('play', () => {
       setIsPlaying(true);
       startControlTimeout();
     });
 
-    playerRef.current.on("pause", () => {
+    playerRef.current.on('pause', () => {
       setIsPlaying(false);
       setShowControl(true);
     });
@@ -79,31 +78,23 @@ const VideoPlayer = ({ videoId }: { videoId: string }) => {
   };
 
   return (
-    <div
-      className="pt-[56%] overflow-hidden"
-      onClick={togglePlay}
-      onMouseMove={handleMouseMove}
-    >
+    <div className="pt-[56%] overflow-hidden" onClick={togglePlay} onMouseMove={handleMouseMove}>
       <iframe
         ref={iframeRef}
         className="absolute inset-0 w-full h-full rounded-3xl"
         src={`https://player.vimeo.com/video/${videoId}?background=1&autopause=0&byline=0&title=0&portrait=0`}
         frameBorder="0"
         allow="autoplay; fullscreen"
-        style={{ pointerEvents: "none" }}
+        style={{ pointerEvents: 'none' }}
       ></iframe>
 
       {/* Play button overlay */}
       <div
         className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
-          showControl ? "opacity-100" : "opacity-0"
+          showControl ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <svg
-          className="w-14 h-14 text-black/75"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
+        <svg className="w-14 h-14 text-black/75" fill="currentColor" viewBox="0 0 20 20">
           {isPlaying ? (
             <path
               fillRule="evenodd"
@@ -121,6 +112,6 @@ const VideoPlayer = ({ videoId }: { videoId: string }) => {
       </div>
     </div>
   );
-}
+};
 
 export default VideoPlayer;

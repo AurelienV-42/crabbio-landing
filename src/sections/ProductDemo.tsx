@@ -11,13 +11,13 @@ const ProductDemo: React.FC = () => {
     prompts: {
       videoId: '1081283363',
       title: t('productDemo.securePrompts.title'),
-      description: t('productDemo.securePrompts.description')
+      description: t('productDemo.securePrompts.description'),
     },
     access: {
       videoId: '1081284140',
       title: t('productDemo.selectiveAccess.title'),
-      description: t('productDemo.selectiveAccess.description')
-    }
+      description: t('productDemo.selectiveAccess.description'),
+    },
   };
 
   return (

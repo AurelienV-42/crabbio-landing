@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import { SVGProps } from 'react';
 
 interface LogoProps extends SVGProps<SVGSVGElement> {
   className?: string;
