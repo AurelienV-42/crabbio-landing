@@ -16,8 +16,7 @@ const Hero: React.FC = () => {
         {/* Main headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-6 leading-tight mt-8 sm:mt-12">
           <span className="text-gray-900">{t('hero.title0')}</span>{' '}
-          <span className={gradients.text.primary}>{t('hero.title1')}</span>{' '}
-          <span className="text-gray-900">{t('hero.title2')}</span>
+          <span className={gradients.text.primary}>{t('hero.title1')}</span>
         </h1>
 
         {/* Subheadline */}
