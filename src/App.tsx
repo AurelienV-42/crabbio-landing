@@ -10,7 +10,7 @@ import './styles/globals.css';
 function App() {
   // Update document title
   useEffect(() => {
-    document.title = 'Crabbio - Make AI use secure';
+    document.title = 'Crabbio - Make AI use safe';
 
     // Update favicon to use static file
     const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
