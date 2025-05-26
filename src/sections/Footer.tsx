@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               <option value="fr">{t('footer.language.fr')}</option>
             </select>
 
-            <a
+            {/* <a
               href={
                 i18n.language === 'fr'
                   ? 'https://crabbio.notion.site/guides-fr'
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
             >
               {t('footer.guides')}
-            </a>
+            </a> */}
 
             {/* Social links */}
             {/* <div className="flex space-x-6">
