@@ -28,7 +28,7 @@ const Founders: React.FC = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t('founders.subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           {founders.map(founder => (
             <div
               key={founder.name}
